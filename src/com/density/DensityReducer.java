@@ -5,6 +5,9 @@ import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
+/**
+ * The DensityReducer class processes relevant data for four regions of the US
+ */
 public class DensityReducer extends Reducer<Text, Text, Text, DoubleWritable> {
 
 	@Override

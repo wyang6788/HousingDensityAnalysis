@@ -5,6 +5,9 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
+/**
+ * The DensityMapper class maps a city's relevant data to the NW, NE, SW, and SE regions of the US
+ */
 public class DensityMapper extends Mapper<LongWritable, Text, Text, Text> {
 
 	@Override

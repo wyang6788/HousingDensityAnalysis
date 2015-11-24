@@ -2,7 +2,6 @@ package com.density;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
@@ -10,7 +9,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
-/*This class is responsible for running map reduce job*/
+/**
+ * The DensityDriver class runs the MapReduce job
+ */
 public class DensityDriver extends Configured implements Tool{
 
 	public int run(String[] args) throws Exception{
